@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="RootGradePane" style="-fx-background-color: #D9F7F0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.MyGame.Connect4.Controller">
+  <columnConstraints>
+    <ColumnConstraints />
+    <ColumnConstraints maxWidth="295.3333333333333" minWidth="221.33334859212238" prefWidth="221.33334859212238" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" />
+    <RowConstraints />
+  </rowConstraints>
+   <children>
+      <Pane GridPane.columnSpan="2" />
+      <Pane fx:id="InsertedDiskPane" prefHeight="400.0" prefWidth="200.0" GridPane.rowIndex="1" />
+      <VBox style="-fx-background-color: #2B3B4C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <TextField fx:id="txtfldPlayerOne" alignment="CENTER" promptText="Player One Name">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></TextField>
+
+            <TextField fx:id="txtfldPlayerTwo" alignment="CENTER" promptText="Player Two Name" />
+            <Button fx:id="btnSetNames" alignment="CENTER" mnemonicParsing="false" text="Set Names" />
+            <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <Label fx:id="playerNameLabel" alignment="CENTER" prefHeight="43.0" prefWidth="299.0" text="Player One" textFill="#fefdfd">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="38.0" prefWidth="301.0" text="Turn" textFill="#f5f3f3">
+               <font>
+                  <Font size="26.0" />
+               </font></Label>
+            <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </children>
+</GridPane>
